@@ -1,5 +1,9 @@
 publish:
-	npm run build && npm publish --access=public
+	@make build
+	npm publish --access=public
+
+build:
+	npm run build 
 
 patch:
 	npm version patch 
